@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anılar Köşesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="anilar-bg">
+  <h1 class="page-title">Anılar Köşesi</h1>
+
+  <div class="gallery">
+    <img src="ani1.jpg" alt="Anı 1">
+    <img src="ani2.jpg" alt="Anı 2">
+    <img src="ani3.jpg" alt="Anı 3">
+    <img src="ani4.jpg" alt="Anı 4">
+    <img src="ani5.jpg" alt="Anı 5">
+    <img src="ani6.jpg" alt="Anı 6">
+    <img src="ani7.jpg" alt="Anı 7">
+    <img src="ani8.jpg" alt="Anı 8">
+    <img src="ani9.jpg" alt="Anı 9">
+    <img src="ani10.jpg" alt="Anı 10">
+    <img src="ani11.jpg" alt="Anı 11">
+    <img src="ani12.jpg" alt="Anı 12">
+    <img src="ani13.jpg" alt="Anı 13">
+    <img src="ani14.jpg" alt="Anı 14">
+    <img src="ani15.jpg" alt="Anı 15">
+    <img src="ani16.jpg" alt="Anı 16">
+    <img src="ani17.jpg" alt="Anı 17">
+    <img src="ani18.jpg" alt="Anı 18">
+    <img src="ani19.jpg" alt="Anı 19">
+    <img src="ani20.jpg" alt="Anı 20">
+    <img src="ani21.jpg" alt="Anı 21">
+    <img src="ani22.jpg" alt="Anı 22">
+    <img src="ani23.jpg" alt="Anı 23">
+    <img src="ani24.jpg" alt="Anı 24">
+    <img src="ani25.jpg" alt="Anı 25">
+    <img src="ani26.jpg" alt="Anı 26">
+    <img src="ani27.jpg" alt="Anı 27">
+    <img src="ani28.jpg" alt="Anı 28">
+    <img src="ani29.jpg" alt="Anı 29">
+    <img src="ani30.jpg" alt="Anı 30">
+    <img src="ani31.jpg" alt="Anı 31">
+    <img src="ani32.jpg" alt="Anı 32">
+    <img src="ani33.jpg" alt="Anı 33">
+    <img src="ani34.jpg" alt="Anı 34">
+    <img src="ani35.jpg" alt="Anı 35">
+    <img src="ani36.jpg" alt="Anı 36">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <a href="index.html"><button class="button">Ana Sayfa</button></a>
+
+  <script>
+    // Lightbox fonksiyonu
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImg) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sana Özel</title>
+  <style>
+    body.sana-ozel-bg {
+      margin: 0;
+      padding: 0;
+      background-image: url('arka-plan.jpg'); /* Fotoğraf adını buraya yaz */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .overlay {
+      min-height: 100vh;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4); /* Hafif koyuluk, şiiri okunur kılar */
+    }
+
+    .title-container h1 {
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    }
+
+    .buttons-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 0 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 1px solid white;
+      border-radius: 8px;
+      cursor: pointer;
+      backdrop-filter: blur(3px);
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .special-poem {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: rgba(0, 0, 0, 0.3); /* Şiir kutusu tamamen saydam */
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .special-poem h2 {
+      color: #ffcccc;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 6px black;
+    }
+
+    .special-poem p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: white;
+      text-shadow: 1px 1px 6px black;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #eee;
+    }
+  </style>
+</head>
+<body class="sana-ozel-bg">
+  <div class="overlay">
+    <header class="title-container">
+      <h1>Sana Özel</h1>
+    </header>
+
+    <div class="buttons-container">
+      <a href="index.html"><button class="button">Ana Sayfa</button></a>
+      <a href="anilar.html"><button class="button">Anılar Köşesi</button></a>
+      <a href="olumsuzlestirme.html"><button class="button">Ölümsüzleştirme</button></a>
+    </div>
+
+    <section class="special-poem">
+      <h2>KAHVERENGİ GÖZLERİN</h2>
+      <p>
+        Bu şiirin her harfi sana dokunur,<br>
+        Kahverengi gözlerinle başlar her huzur.<br>
+        Sessizliğin içinde yankılanan bir şarkı,<br>
+        Kalbime yazılmış en güzel yazı...<br><br>
+
+        Gözlerin, yıldızları utandırır gecede,<br>
+        Gülüşün yeter bana her derde.<br>
+        Seninle geçen her an sonsuz bir masal,<br>
+        Kalbime yazılmış en güzel yazı.<br>
+      </p>
+    </section>
+
+    <footer>
+      <p>Her Köşesi Sana Özel :)</p>
+    </footer>
+  </div>
+</body>
+</html>
